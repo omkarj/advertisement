@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
  
-    <title>SellKaro</title>
+    <title>SellKaro.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/footer-distributed.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -22,23 +23,80 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="1.html"><span class="glyphicon glyphicon-send">SellKaro.com</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-home">Home</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#">Adverstisement</a></li>
-        <li><a href="#">Contact Us<span class="glyphicon glyphicon-phone"></span></a></li> 
+        <li><a href="#categories">Categories<span class="glyphicon glyphicon-calendar"></span></a></li>
+        <li><a href="#advertisement">Advertisement<span class="glyphicon glyphicon-blackboard"></span></a></li>
+        <li><a href="#contact">Contact Us<span class="glyphicon glyphicon-phone"></span></a></li> 
         <li class="dropdown">
 
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
           <span class="glyphicon glyphicon-user"></span> 
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li> 
+              <center><li><a href="#" onclick="document.getElementById('id01').style.display='block'"> Log In</a></li></center>
+              <center><li><a href="#" onclick="document.getElementById('id02').style.display='block'"> Sign Up</a></li></center>
           </ul>
+
+
+           <div id="id01" class="modal"> 
+              <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <center><h2>Log In</h2></center>
+                </div>
+
+                <div class="container_login">
+                  <center><label><b> Username  </b></label></center>
+                  <input type="text" placeholder="  Username" name="uname" required><br><br>
+
+                   <center><label><b> Password  </b></label></center>
+                  <input type="password" placeholder="  Password" name="psw" required><br><br>
+                    
+                  <!--<button type="submit" id="login_btn">Log In</button><br>-->
+                  <button class="btn btn-lg">Log In</button><br>
+                  <input type="checkbox" checked="checked"> Remember me
+                  <br>
+                  <br>
+                </div>
+
+                <div class="container_login" style="background-color:black;  margin-bottom:0px;">
+                    <label><b> <a href="#">Forgot Password?</a> </b></label>
+                </div>
+              </form>
+          </div>
+
+
+          <div id="id02" class="modal">
+            <form class="modal-content animate" action="">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <center><h2>Sign Up</h2></center>
+              </div>
+              <div class="container_login">
+                <center><label><b>Email </b></label></center>
+                <input type="text" placeholder="  Email" name="email"  id="enteredEmail" required><br><br>
+
+                <center><label><b>Password </b></label></center>
+                <input type="password" placeholder="  Password" name="psw"  id="enteredPass" required><br><br>
+
+                <center><label><b>Reenter Password </b></label></center>
+                <input type="password" placeholder="  Reenter Password" name="psw-repeat"  id="enteredRepeatPass" required><br><br>
+                <input type="checkbox" checked="checked"> Remember me
+                <br>
+                <p>By creating an account you agree to our Terms & Conditions. </p>
+                
+                <div class="clearfix">
+                  <button type="submit" class="btn btn-lg" onclick="validateCredential()" style="color:black; margin-bottom: 10px;" >Sign Up</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
         </li>
       </ul>
     </div>
@@ -53,22 +111,22 @@
   <div class="row slideanim">
 
       <div class="col-sm-3">
-        <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+        <a href="#"><img src="Images/cars.png" alt="cars" height=80, width=80>
         <h4>Cars</h4></a>
       </div>
 
       <div class="col-sm-3">
-        <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+        <a href="#"><img src="Images/bikes.png" alt="bikes" height=80, width=80>
         <h4>Bikes</h4></a>
       </div>
 
       <div class="col-sm-3">
-       <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+       <a href="#"><img src="Images/electronics.png" alt="electronics" height=80, width=80>
         <h4>Electronics</h4></a>
       </div>
 
       <div class="col-sm-3">
-       <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+       <a href="#"><img src="Images/realestate.png" alt="real estate" height=80, width=80>
         <h4>Real Estate</h4></a>
       </div>
       
@@ -78,23 +136,23 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-3">
-     <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+     <a href="#"><img src="Images/clothing.png" alt="clothing" height=80, width=80>
       <h4>Clothing</h4></a>
     
     </div>
     <div class="col-sm-3">
-      <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+      <a href="#"><img src="Images/services.png" alt="services" height=80, width=80>
       <h4>Services</h4></a>
       
     </div>
     <div class="col-sm-3">
-      <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+      <a href="#"><img src="Images/pets.png" alt="pets" height=80, width=80>
       <h4 style="color:#303030;">Pets</h4></a>
       
     </div>
 
     <div class="col-sm-3">
-      <a href="#"><img src="D:/Movie_Review/Images/Bahubali2.jpg" alt="Toilet" height=70, width=70>
+      <a href="#"><img src="Images/jobs.png" alt="jobs" height=80, width=80>
       <h4 style="color:#303030;">Jobs</h4></a>
       
     </div>
@@ -102,8 +160,168 @@
 </div>
 
 
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact Details</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 1234567890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> abc@xyz.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Any Comment/Queries" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<footer class="container-fluid text-center">
-  <p><a href="#"><strong>SellKaro</strong></a> Copyright &copy; 2017. All Rights Reserved.</p>
+
+<div id="advertisement" class="container-fluid">
+  <div class="text-center">
+    <h2>Advertisement</h2>
+    <h4>Choose one to proceed.</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Show Ads</h1>
+        </div>
+        <div class="panel-body">
+          <p> View a wide variety of Ads. </p>
+         
+          
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Proceed</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Post Ads</h1>
+        </div>
+        <div class="panel-body">
+          
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+   
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"The Game's Afoot!"<br><span>Sherlock Holmes</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Ram</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Great"<br><span>Shyam</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+        </div>
+        <div class="panel-footer">
+          <!--<center><li><a href="#" onclick="document.getElementById('id01').style.display='block'"> Log In</a></li></center>-->
+          <button class="btn btn-lg" onclick="document.getElementById('id03').style.display='block'">Proceed</button>
+        </div>
+      </div>      
+    </div>    
+
+
+    <div id="id03" class="modal"> 
+              <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <center><h2>Post an Ad</h2></center>
+                </div>
+
+                <div class="container_login">
+                  <b> Ad Title : </b>
+                  <input type="text" placeholder="  Ad Title" name="adTitle" required><br><br>
+
+                  <b> Category : </b>
+                 <select>
+                      <option value="cars">Cars</option>
+                      <option value="bikes">Bikes</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="realestate">Real Estate</option>
+                      <option value="clothing">Clothing</option>
+                      <option value="services">Services</option>
+                      <option value="pets">Pets</option>
+                      <option value="jobs">Jobs</option>
+                  </select><br><br>
+
+
+                   <center><label><b> Password  </b></label></center>
+                  <input type="password" placeholder="  Password" name="psw" required><br><br>
+                    
+                  <!--<button type="submit" id="login_btn">Log In</button><br>-->
+                  <button class="btn btn-lg">Log In</button><br>
+                  <input type="checkbox" checked="checked"> Remember me
+                  <br>
+                  <br>
+                </div>
+
+                <div class="container_login" style="background-color:black;  margin-bottom:0px;">
+                    <label><b> <a href="#">Forgot Password?</a> </b></label>
+                </div>
+              </form>
+          </div>
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>View my Ads</h1>
+        </div>
+        <div class="panel-body">
+          <p>Check details of your past Ads.</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Proceed</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+  <center><p><a href="1.html"><strong><span style="color:white" class="glyphicon glyphicon-send">SellKaro.com</span></strong></a> Copyright &copy; 2017. All Rights Reserved.</p></center>
 </footer>
-<
+
+
+
