@@ -56,7 +56,7 @@
                    <center><label><b> Password  </b></label></center>
                   <input type="password" placeholder="  Password" name="psw" required><br><br>
                     
-                  <!--<button type="submit" id="login_btn">Log In</button><br>-->
+                  
                   <button class="btn btn-lg">Log In</button><br>
                   <input type="checkbox" checked="checked"> Remember me
                   <br>
@@ -111,7 +111,7 @@
   <div class="row slideanim">
 
       <div class="col-sm-3">
-        <a href="#"><img src="Images/cars.png" alt="cars" height=80, width=80>
+        <a href="#c1"><img src="Images/cars.png" alt="cars" height=80, width=80>
         <h4>Cars</h4></a>
       </div>
 
@@ -160,33 +160,123 @@
 </div>
 
 
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">Contact Us</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact Details</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, India</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91 1234567890</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> abc@xyz.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
+
+<div id="c1" class="container-fluid text-center">
+  <h2>Cars</h2>
+  <h4>Choose the type of car ads you want to view.</h4>
+  <br>
+  <div class="row slideanim" style="padding-left: 250px;">
+
+      <div class="col-sm-3">
+        
+        <img src="Images/suv.png" alt="suv" height=100, width=180>
+        <button class="btn btn-lg" onclick="document.getElementById('cSuv').style.display='block'">SUV</button>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Any Comment/Queries" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
+
+      <div class="col-sm-3">
+        
+          <img src="Images/hatchback.jfif" alt="hatchback" height=100, width=180>
+        <button class="btn btn-lg" onclick="document.getElementById('cHatchback').style.display='block'">Hatchback</button>
+
       </div>
-    </div>
+
+      <div class="col-sm-3">
+       <img src="Images/sedan.png" alt="suv" height=100, width=180>
+        <button class="btn btn-lg" onclick="document.getElementById('cSedan').style.display='block'">Sedan</button>
+      </div>
+      
   </div>
+
+
+   <div id="cSuv" class="modal"> 
+              <form class="modal-content animate" action="">
+                     <div class="imgcontainer">
+                  <span onclick="document.getElementById('cSuv').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <center><h2>SUV</h2></center>
+                </div>
+
+                      <div class="panel-body">
+          
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" style="height: 400px">
+   
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        
+          
+          <img src="Images/ford.jfif" alt="Ford" height=500px, width=500px>
+           <font color="black" size="2">Ford Endeavor<br>(2013 Model)</font></b><br>
+            <b><font color="black" size="2">INR 6,00,000 </font></b> 
+          
+          
+         <!-- 
+          <div class="middle">
+            <div class="text">
+              <div  class="screencast">
+                <a href="bahubali.html"><b><font color="black" size="3">Jagga Jasoos</font></b></a><br>
+                <b><font color="black" size="2">Director : </font></b>  
+                <a href="https://en.wikipedia.org/wiki/S._S._Rajamouli" style="color:black; text-decoration:none">S. S. Rajamouli</a><br>
+                <b><font color="black" size="2">Producer :</font></b>
+                <a href="https://en.wikipedia.org/wiki/S._S._Rajamouli" style="color:black; text-decoration:none">Shobhu</a><br>
+                <b><font color="black" size="2">Starring :</font></b>
+                <a href="https://en.wikipedia.org/wiki/Rana_Daggubati" style="color:black; text-decoration:none">Rana Daggubati</a><br>
+                <b><font color="black" size="2">Rating :</font></b>
+                <a href="https://en.wikipedia.org/wiki/Rana_Daggubati" style="color:black; text-decoration:none">4/5</a><br>
+              </div>
+            </div>
+          </div>
+        -->  
+
+      </div>
+
+      <div class="item">
+      <img src="Images/xuv.jfif" alt="XUV" height=1000px, width=500px>
+      <font color="black" size="2">Mahindra XUV<br>(2015 Model)</font></b><br>
+            <b><font color="black" size="2">INR 7,00,000 </font></b> 
+
+      </div>
+
+      <div class="item">
+        
+              <img src="Images/scorpio.jpg" alt="scorpio" height=1000px, width=500px>
+               <font color="black" size="2">Mahindra Scorpio<br>(2010 Model)</font></b><br>
+            <b><font color="black" size="2">INR 3,00,000 </font></b> 
+
+
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+        </div>
+
+
+
+
+
+              </form>
+    </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+
+
 
 
 <div id="advertisement" class="container-fluid">
@@ -206,10 +296,13 @@
           
         </div>
         <div class="panel-footer">
-          <button class="btn btn-lg">Proceed</button>
+
+            
+           <a href="#categories"><button class="btn btn-lg">Proceed</button></a>
         </div>
       </div>      
     </div>     
+
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -223,13 +316,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"The Game's Afoot!"<br><span>Sherlock Holmes</span></h4>
+        <p><b>Fact : </b>Ads with more photos get more views!</p>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>Ram</span></h4>
+        <p>Create an attractive Ad!</p>
       </div>
       <div class="item">
-        <h4>"Great"<br><span>Shyam</span></h4>
+        <p>Add a Catchy Description.</p>
       </div>
     </div>
 
@@ -262,10 +355,10 @@
                 </div>
 
                 <div class="container_login">
-                  <b> Ad Title : </b>
+                  <b> Ad Title  </b><br>
                   <input type="text" placeholder="  Ad Title" name="adTitle" required><br><br>
 
-                  <b> Category : </b>
+                  <b> Category  </b><br>
                  <select>
                       <option value="cars">Cars</option>
                       <option value="bikes">Bikes</option>
@@ -278,19 +371,25 @@
                   </select><br><br>
 
 
-                   <center><label><b> Password  </b></label></center>
-                  <input type="password" placeholder="  Password" name="psw" required><br><br>
+                   <center><label><b> Add image  </b></label></center>
+                    <center><input type="file" name="pic" accept="image/*"></center>
                     
-                  <!--<button type="submit" id="login_btn">Log In</button><br>-->
-                  <button class="btn btn-lg">Log In</button><br>
-                  <input type="checkbox" checked="checked"> Remember me
+
+                    <br>
+                   <center><label><b> Contact No.  </b></label></center>
+                   +91<input type="int" placeholder="  Contact No." name="contact" required><br><br>
+                    
+                    <center><label><b> Ad Description  </b></label></center>
+                    <textarea rows="2" cols="20" required> </textarea>
+                    <br>
+               
+                  <button class="btn btn-lg">Post</button><br>
+                  
                   <br>
                   <br>
                 </div>
 
-                <div class="container_login" style="background-color:black;  margin-bottom:0px;">
-                    <label><b> <a href="#">Forgot Password?</a> </b></label>
-                </div>
+              
               </form>
           </div>
 
@@ -304,15 +403,94 @@
           <p>Check details of your past Ads.</p>
         </div>
         <div class="panel-footer">
-          <button class="btn btn-lg">Proceed</button>
+          <button class="btn btn-lg" onclick="document.getElementById('id04').style.display='block'">Proceed</button>
         </div>
+
+
+         <div id="id04" class="modal"> 
+              <form class="modal-content animate" action="">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <center><h2>Log In to continue</h2></center>
+                </div>
+
+                <div class="container_login">
+                  <center><label><b> Username  </b></label></center>
+                  <input type="text" placeholder="  Username" name="uname" required><br><br>
+
+                   <center><label><b> Password  </b></label></center>
+                  <input type="password" placeholder="  Password" name="psw" required><br><br>
+                    
+                 
+                  <button class="btn btn-lg">Log In</button><br>
+                  <input type="checkbox" checked="checked"> Remember me
+                  <br>
+                  <br>
+                </div>
+
+                <div class="container_login" style="background-color:black;  margin-bottom:0px;">
+                    <label><b> <a href="#" style="color: white">Forgot Password?</a> </b></label>
+                </div>
+              </form>
+          </div>
+
       </div>      
     </div>    
   </div>
 </div>
 
+<br>
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact Details</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 1234567890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> abc@sellkaro.com</p>
 
 
+    </div>
+
+    
+    <div class="col-sm-7 slideanim">
+      <!--<div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Any Comment/Queries" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>-->
+
+       <div class="container_login">
+                  <center><label><b> Name  </b></label></center>
+                  <input type="text" placeholder=" Name" name="Uname" required><br><br>
+
+                   <center><label><b> Email  </b></label></center>
+                  <input type="email" placeholder="  Password" name="Uemail" required><br><br>
+                    
+
+                  <center><label><b> Any Queries/Comments  </b></label></center>
+                  <textarea rows="4" cols="50" required> </textarea>
+
+                  <br>
+                  <br>
+                  <button class="btn btn-lg">Send</button><br>
+                  
+                  <br>
+                  <br>
+        </div>
+
+    </div>
+  </div>
+</div>
 
 
 
